@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example.projects'
+version '1.0-SNAPSHOT'
+
+compileJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+jar {
+    group = 'build'
+    manifest {
+        attributes 'Implementation-Version': version,
+                'Main-Class': 'com.example.projects.Project1'
+    }
+    version = null
+    baseName = project.name
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+dependencies {
+
+}
