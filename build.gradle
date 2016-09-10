@@ -28,5 +28,5 @@ jar {
 }
 
 dependencies {
-
+    compile project(':project2')
 }
