@@ -6,10 +6,12 @@ Uses Gradle to build this and import this project.
 
 Looks like IntelliJ has [decent support](https://www.jetbrains.com/help/idea/2016.2/git-branches-in-multirooted-projects.html) for this.
 
-## Cloning
+## Dev
 
 Run ```git clone``` then
 
 ```
 git submodule update --recursive
 ```
+
+Now open this project in IntelliJ and it should all just be configured.
