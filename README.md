@@ -11,6 +11,7 @@ Looks like IntelliJ has [decent support](https://www.jetbrains.com/help/idea/201
 Run ```git clone``` then
 
 ```
+git submodule init
 git submodule update --recursive
 ```
 
